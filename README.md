@@ -36,7 +36,7 @@ Key objectives:
 ## 🛠 Technologies Used
 
 - **SQL:** Data cleaning, preprocessing, aggregation, and analytical queries (`sql/analysis_queries.sql`)  
-- **Power BI:** Dashboard creation and visualization (`powerbi/pbix/Flight_Performance_Dashboard.pbix`)  
+- **Power BI:** Dashboard creation and visualization (`powerbi/Flight_Performance_Dashboard.pbix`)  
 - **Screenshots:** PNG images of dashboards for quick viewing (`dashboard_screenshots/`)
 
 ---
