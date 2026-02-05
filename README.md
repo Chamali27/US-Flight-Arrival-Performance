@@ -1,4 +1,3 @@
-
 # US Flight Arrival Performance Analysis (2010–2025)
 
 This repository contains an analysis of U.S. flight arrival performance using **SQL** and **Power BI**. The project examines flight delays, cancellations, diversions, and root causes, providing interactive dashboards for airline and airport performance insights.
@@ -6,9 +5,22 @@ This repository contains an analysis of U.S. flight arrival performance using **
 ---
 
 ## 📂 Folder Structure
+```
+US-Flight-Arrival-Performance/
+│
+├── README.md
+├── data/
+│ └── flight_arrival_performance.csv # Raw dataset
+├── sql/
+│ └── analysis_queries.sql # SQL analysis queries
+├── powerbi/
+│ ├── Flight_Performance_Dashboard.pbix # Power BI dashboard file
+│ └── dashboard_screenshots/
+│ ├── Airline Performance Overview.png
+│ ├── Airport Performance Analysis.png
+│ └── Delay Root Cause Analysis.png
 
-
-
+```
 
 ---
 
@@ -35,55 +47,60 @@ Key objectives:
 
 ## 🛠 Technologies Used
 
-- **SQL:** Data cleaning, preprocessing, aggregation, and analytical queries (`sql/analysis_queries.sql`)  
-- **Power BI:** Dashboard creation and visualization (`powerbi/Flight_Performance_Dashboard.pbix`)  
-- **Screenshots:** PNG images of dashboards for quick viewing (`dashboard_screenshots/`)
+- **SQL:** Analytical queries for airline, airport, and delay analysis  
+  (`sql/analysis_queries.sql`)
+- **Power BI:** Interactive dashboards and data visualization  
+  (`powerbi/Flight_Performance_Dashboard.pbix`)
+- **Dashboard Screenshots:** PNG images for quick visual reference  
+  (`powerbi/dashboard_screenshots/`)
 
 ---
 
 ## ⚡ Dashboards Overview
 
-1. **Airline Performance Overview**  
-   - Measures total flights, cancellations, diversions, and average delays per airline.  
-   - Screenshot: `dashboard_screenshots/airline_performance.png`
+### 1. Airline Performance Overview
+- Displays total flights, cancellation rate, diversion rate, total delay impact, and average delay per flight by airline.
+- Screenshot:  
+  `powerbi/dashboard_screenshots/Airline Performance Overview.png`
 
-2. **Delay Root Cause Analysis**  
-   - Visualizes contribution of different causes to total delay (carrier, weather, NAS, security, late aircraft).  
-   - Screenshot: `dashboard_screenshots/delay_root_cause.png`
+### 2. Delay Root Cause Analysis
+- Analyzes the contribution of different delay causes including carrier, weather, NAS, security, and late-arriving aircraft.
+- Screenshot:  
+  `powerbi/dashboard_screenshots/Delay Root Cause Analysis.png`
 
-3. **Airport Performance Analysis**  
-   - Measures operational efficiency at the airport level: delays, cancellations, diversions.  
-   - Screenshot: `dashboard_screenshots/airport_performance.png`
+### 3. Airport Performance Analysis
+- Evaluates airport-level operational performance using metrics such as average delay per flight, cancellation rate, and diversion rate.
+- Screenshot:  
+  `powerbi/dashboard_screenshots/Airport Performance Analysis.png`
 
 ---
 
 ## 📌 How to Use
 
-1. **SQL Queries:**  
-   - Open `sql/analysis_queries.sql` in your SQL environment.  
-   - Run queries to reproduce the tables and insights used in Power BI dashboards.
+### SQL Analysis
+- Open `sql/analysis_queries.sql` in your SQL environment.
+- Execute queries to generate analytical results.
 
-2. **Power BI Dashboard:**  
-   - Open `powerbi/pbix/Flight_Performance_Dashboard.pbix` in Power BI Desktop.  
-   - Use slicers and filters to explore trends by airline, airport, month, and year.
+### Power BI Dashboard
+- Open `powerbi/Flight_Performance_Dashboard.pbix` using Power BI Desktop.
+- Use slicers and filters to explore airline-, airport-, and time-based trends.
 
-3. **Dashboard Screenshots:**  
-   - View high-level visuals in `dashboard_screenshots/` without opening Power BI.
+### Dashboard Screenshots
+- View dashboard visuals directly from  
+  `powerbi/dashboard_screenshots/`  
+  without opening Power BI.
 
 ---
 
 ## ⚠ Limitations
 
-- Analysis uses aggregated arrival-level data; flight-level details like aircraft type or crew info are not included.  
-- Delay causes are categorized based on BTS predefined categories and may not reflect all operational factors.  
-- Only arrival performance is analyzed, not departure delays or passenger-level outcomes.
+- The analysis is based on aggregated arrival-level data.
+- Delay causes follow BTS predefined categories and may not capture all operational dependencies.
+- Departure delays and passenger-centric impacts are not included.
 
 ---
 
 ## 📄 References
 
-- Bureau of Transportation Statistics (BTS) TranStats OT Delay Database: [https://www.transtats.bts.gov](https://www.transtats.bts.gov)
-
----
-
-
+- Bureau of Transportation Statistics (BTS), TranStats On-Time Performance Database  
+  https://www.transtats.bts.gov
