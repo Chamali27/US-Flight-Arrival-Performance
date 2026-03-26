@@ -4,7 +4,7 @@ This repository contains an analysis of U.S. flight arrival performance using **
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 US-Flight-Arrival-Performance/
 │
@@ -24,7 +24,7 @@ US-Flight-Arrival-Performance/
 
 ---
 
-## 📝 Project Overview
+## Project Overview
 
 The project analyzes U.S. flight arrival performance between **January 2010 and September 2025**, using the **Bureau of Transportation Statistics (BTS) On-Time Performance dataset**.
 
@@ -36,7 +36,7 @@ Key objectives:
 
 ---
 
-## 💾 Dataset
+## Dataset
 
 - **File:** `data/flight_arrival_performance.csv`  
 - **Source:** [BTS TranStats OT Delay Database](https://www.transtats.bts.gov)  
@@ -45,7 +45,7 @@ Key objectives:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **SQL:** Analytical queries for airline, airport, and delay analysis  
   (`sql/analysis_queries.sql`)
@@ -56,7 +56,7 @@ Key objectives:
 
 ---
 
-## ⚡ Dashboards Overview
+## Dashboards Overview
 
 ### 1. Airline Performance Overview
 - Displays total flights, cancellation rate, diversion rate, total delay impact, and average delay per flight by airline.
@@ -75,7 +75,7 @@ Key objectives:
 
 ---
 
-## 📌 How to Use
+## How to Use
 
 ### SQL Analysis
 - Open `sql/analysis_queries.sql` in your SQL environment.
@@ -92,7 +92,7 @@ Key objectives:
 
 ---
 
-## ⚠ Limitations
+## Limitations
 
 - The analysis is based on aggregated arrival-level data.
 - Delay causes follow BTS predefined categories and may not capture all operational dependencies.
@@ -100,7 +100,7 @@ Key objectives:
 
 ---
 
-## 📄 References
+## References
 
 - Bureau of Transportation Statistics (BTS), TranStats On-Time Performance Database  
   https://www.transtats.bts.gov
